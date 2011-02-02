@@ -1,0 +1,12 @@
+{
+	"name" : "Import Users",
+	"author" : "Maarten Ectors <maarten@nospam.me>",
+	"description" : "Bulk users upload.",
+	"url" : "http://twitter.com/telruptive",
+	"links" : [{
+		"menu" : "Bulk Import",
+		"url" : "import",
+		"script" : "import.php",
+		"label" : "Import Users"
+	}]
+}
