@@ -1,5 +1,5 @@
 <?php
-error_log("submitted start ${_POST['submitted']}");
+
 	if(isset($_POST['submitted'])){
 		if(($file=$_FILES['file']['tmp_name'])&&is_uploaded_file($file))
 			$import=file_get_contents($file);
@@ -11,7 +11,6 @@ error_log("submitted start ${_POST['submitted']}");
 	for($i=0;$i<$count;$i++)
 	{
 		$parts=explode(';',$lines[$i]);
-error_log($parts);
 		$firstname = $parts[0];
 		$lastname = $parts[1];
 		$email = $parts[2];
@@ -115,7 +114,6 @@ error_log($parts);
 		else
 		{
 			$error = true;
-error_log("error");
 		}
 
 	}
